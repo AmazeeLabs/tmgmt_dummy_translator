@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ *  A dummy translator service for the TMGMT. It will just prepend the language
+ *  name in the strings.
+ */
+
+/**
+ * Implements hook_tmgmt_translator_plugin_info().
+ */
+function tmgmt_dummy_translator_tmgmt_translator_plugin_info() {
+  return array(
+    'dummy_translator' => array(
+      'label' => t('Dummy translator'),
+      'description' => t('Dummy translator'),
+      'plugin controller class' => 'TMGMTDummyPluginController',
+    ),
+  );
+}

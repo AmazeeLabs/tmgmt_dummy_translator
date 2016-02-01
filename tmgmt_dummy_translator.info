@@ -1,0 +1,6 @@
+name = TMGMT Dummy Translator
+description = A dummy translator service for the TMGMT. It will just prepend the language name in the strings.
+core = 7.x
+dependencies[] = tmgmt
+package = Translation Management
+files[] = includes/tmgmt_dummy_translator.plugin.inc
