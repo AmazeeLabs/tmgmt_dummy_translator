@@ -31,9 +31,8 @@ class TMGMTDummyPluginController extends TMGMTDefaultTranslatorPluginController 
     }
     $job->addTranslatedData(tmgmt_unflatten_data($translation));
     $job->submitted();
-    // If we want to automatically accept the translation, we just have to
-    // uncomment the line below, and comment out the line above, where we
-    // submit the job.
-    //$job->acceptTranslation();
+    // We automatically accept the translation. If we do not want this, we can
+    // comment the line below.
+    $job->acceptTranslation();
   }
 }
