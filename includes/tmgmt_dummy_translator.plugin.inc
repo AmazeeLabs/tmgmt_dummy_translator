@@ -25,7 +25,8 @@ class TMGMTDummyPluginController extends TMGMTDefaultTranslatorPluginController 
       $fields = array_filter(tmgmt_flatten_data($itemsourcedata), '_tmgmt_filter_data');
       foreach ($fields as $fieldarray_id => $field_array) {
         $translation[$tjiid . TMGMT_ARRAY_DELIMITER . $fieldarray_id] = array(
-          '#text' => $target_language->name . ': ' . $field_array['#text']
+          //'#text' => $target_language->name . ': ' . $field_array['#text']
+          '#text' => $field_array['#text']
         );
       }
     }
